@@ -1,0 +1,88 @@
+{
+  "0": {
+    "class_id": 0,
+    "name": "Healthy Sugarcane",
+    "scientific_name": "Saccharum officinarum",
+    "severity": "None",
+    "description": "Foliage exhibits vigorous chlorophyll pigmentation, uniform venation, and absence of necrotic lesions or discoloration.",
+    "symptoms": [
+      "Lush green leaves",
+      "Sturdy midribs",
+      "Normal internode elongation"
+    ],
+    "next_steps": [
+      "Continue scheduled irrigation and balanced NPK nutrition.",
+      "Maintain bi-weekly visual inspections during active tillering.",
+      "Record observations to preserve historical health baseline."
+    ]
+  },
+  "1": {
+    "class_id": 1,
+    "name": "Red Rot",
+    "scientific_name": "Colletotrichum falcatum",
+    "severity": "Severe",
+    "description": "Major fungal vascular disease characterized by red discoloration across leaf midribs, internal stalk reddening with white horizontal patches, and rapid cane drying.",
+    "symptoms": [
+      "Spreading red lesions on leaf midribs",
+      "White patches across reddened stalk tissues",
+      "Withering of crown leaves"
+    ],
+    "next_steps": [
+      "Isolate and rogue out infected clumps immediately to prevent spore dispersal.",
+      "Avoid ratoon cropping in infected patches.",
+      "Use certified disease-free setts treated with hot-water (52\u00b0C for 30 mins) or Trichoderma viride.",
+      "Ensure field drainage to eliminate standing stagnant moisture."
+    ]
+  },
+  "2": {
+    "class_id": 2,
+    "name": "Sugarcane Mosaic Virus",
+    "scientific_name": "Sugarcane Mosaic Virus (SCMV)",
+    "severity": "Moderate",
+    "description": "Potyvirus transmitted primarily by corn leaf aphids (Rhopalosiphum maidis), resulting in contrasting dark and light green chlorotic mottling on younger leaves.",
+    "symptoms": [
+      "Alternating pale green / yellowish streaks and islands",
+      "Stunted tillering",
+      "Chlorotic blotches on expanding spindle leaves"
+    ],
+    "next_steps": [
+      "Eradicate aphid vectors using biological controls or approved horticultural neem spray.",
+      "Rogue out severely stunted stools in nursery plots.",
+      "Plant resistant sugarcane cultivars (e.g. Co 86032, Co 0238 where resistant clones exist)."
+    ]
+  },
+  "3": {
+    "class_id": 3,
+    "name": "Leaf Scald",
+    "scientific_name": "Xanthomonas albilineans",
+    "severity": "High",
+    "description": "Vascular bacterial wilt manifesting as sharp, pencil-line white stripes along leaf veins that expand into scalded, bleached foliar necrosis resembling fire scorch.",
+    "symptoms": [
+      "Narrow, sharply defined 'pencil lines' along veins",
+      "Inward curling of leaves creating scalded appearance",
+      "Side-shooting on upper nodes"
+    ],
+    "next_steps": [
+      "Disinfect harvesting knives and cultivation implements with 10% bleach or Lysol between plots.",
+      "Use heat-treated seed setts to eliminate latent vascular bacteria.",
+      "Improve drainage and avoid excessive nitrogen application during wet seasons."
+    ]
+  },
+  "4": {
+    "class_id": 4,
+    "name": "Yellow Leaf Disease",
+    "scientific_name": "Sugarcane Yellow Leaf Virus (SCYLV)",
+    "severity": "Moderate",
+    "description": "Aphid-borne luteovirus causing bright yellowing of midribs on leaves 3 to 6 from the top, gradually spreading outward into the lamina and reducing sucrose content.",
+    "symptoms": [
+      "Distinct intense yellowing of midrib lower surface",
+      "Reddish-pink discoloration on upper midrib in later stages",
+      "Shortening of terminal internodes"
+    ],
+    "next_steps": [
+      "Deploy tissue-culture derived disease-free planting material.",
+      "Monitor and manage vector sugarcane aphid (Melanaphis sacchari) colonies.",
+      "Optimize potassium and micronutrient supplementation to alleviate foliar stress."
+    ]
+  }
+}

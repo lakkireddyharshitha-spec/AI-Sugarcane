@@ -29,7 +29,6 @@ backend/*.db
 backend/*.sqlite
 backend/*.sqlite3
 reports/*
-uploads/*
 
 # Editor and operating-system files
 .vscode/

@@ -141,12 +141,20 @@ def inspect_dataset() -> Dict[str, Any]:
         return {
             "dataset_file_found": False,
             "dataset_path": None,
+            "dataset_file": "preprocessed_dataset.111.csv",
             "total_records": 0,
             "classes_count": len(mapping),
+            "num_classes": len(mapping),
             "class_distribution": {},
+            "class_mapping": mapping,
             "images_available": False,
             "image_directory_path": None,
             "model_trained": False,
+            "models": [
+                {"name": "Disease CNN", "available": False},
+                {"name": "Growth LSTM", "available": False},
+                {"name": "Risk RF", "available": False}
+            ],
             "status_message": "Dataset CSV not found. Running in DEMO MODE."
         }
 
@@ -183,23 +191,39 @@ def inspect_dataset() -> Dict[str, Any]:
         return {
             "dataset_file_found": True,
             "dataset_path": csv_path,
+            "dataset_file": os.path.basename(csv_path),
             "total_records": total_records,
-            "classes_count": len(dist),
+            "classes_count": len(dist) or len(mapping),
+            "num_classes": len(dist) or len(mapping),
             "class_distribution": dist,
+            "class_mapping": mapping,
             "images_available": images_found,
             "image_directory_path": img_dir if os.path.exists(img_dir) else None,
             "model_trained": model_trained,
+            "models": [
+                {"name": "Disease CNN", "available": model_trained},
+                {"name": "Growth LSTM", "available": False},
+                {"name": "Risk RF", "available": False}
+            ],
             "status_message": status_msg
         }
     except Exception as e:
         return {
             "dataset_file_found": True,
             "dataset_path": csv_path,
+            "dataset_file": os.path.basename(csv_path) if csv_path else "preprocessed_dataset.111.csv",
             "total_records": 0,
-            "classes_count": 5,
+            "classes_count": len(mapping),
+            "num_classes": len(mapping),
             "class_distribution": {},
+            "class_mapping": mapping,
             "images_available": False,
             "image_directory_path": None,
             "model_trained": False,
+            "models": [
+                {"name": "Disease CNN", "available": False},
+                {"name": "Growth LSTM", "available": False},
+                {"name": "Risk RF", "available": False}
+            ],
             "status_message": f"Error parsing dataset CSV: {str(e)}"
         }

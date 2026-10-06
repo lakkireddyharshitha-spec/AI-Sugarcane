@@ -20,7 +20,7 @@ from models.disease_detection import DiseaseDetection
 from models.risk_prediction import RiskPrediction
 from models.alert import Alert
 from services.auth_service import get_password_hash
-from services.dataset_service import ensure_dataset_files
+from services.dataset_service import ensure_dataset_files, inspect_dataset
 from services.disease_service import UPLOADS_DIR
 
 from routes.auth import router as auth_router
@@ -73,6 +73,10 @@ def root():
         "documentation": "/docs",
         "version": "1.0.0"
     }
+
+@app.get("/api/dataset/status")
+def get_dataset_status():
+    return inspect_dataset()
 
 def seed_database_if_empty():
     """Seed initial demo account with realistic sugarcane farm records."""
